@@ -48,17 +48,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JqS-xh-dpN">
-                                <rect key="frame" x="82" y="161" width="250" height="45.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <rect key="frame" x="82" y="161" width="250" height="39.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v0Y-5W-Bd0">
-                                <rect key="frame" x="82" y="243.5" width="250" height="45.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <rect key="frame" x="82" y="237.5" width="250" height="39.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iqM-0a-MGk">
-                                <rect key="frame" x="82" y="337.5" width="250" height="48"/>
+                                <rect key="frame" x="82" y="325.5" width="250" height="48"/>
                                 <color key="backgroundColor" red="0.92196905610000002" green="0.98015588519999997" blue="0.9960903525" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Login"/>
@@ -262,28 +262,31 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i2R-aI-Ind">
-                                <rect key="frame" x="82" y="161" width="250" height="46"/>
+                                <rect key="frame" x="82" y="161" width="250" height="39.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="ILf-8Q-S4o"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ugj-Fx-f0L">
-                                <rect key="frame" x="82" y="244" width="250" height="45.5"/>
+                                <rect key="frame" x="82" y="237.5" width="250" height="39.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="xa7-4F-nih"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="upH-at-Fan">
-                                <rect key="frame" x="82" y="338" width="250" height="48"/>
+                                <rect key="frame" x="82" y="325.5" width="250" height="48"/>
                                 <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Register">
                                     <color key="titleColor" red="0.99998790029999995" green="0.9999936223" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <action selector="registerPressed:" destination="Cwf-IC-DUm" eventType="touchUpInside" id="5X1-W6-5mn"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -302,6 +305,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="0cr-ER-3Jd"/>
                     <connections>
+                        <outlet property="emailTextField" destination="i2R-aI-Ind" id="ZxI-rp-DnR"/>
+                        <outlet property="passwordTextField" destination="Ugj-Fx-f0L" id="kZG-n9-XeG"/>
                         <segue destination="kj6-wX-0uk" kind="show" identifier="RegisterToHome" id="Uyx-tX-ttN"/>
                     </connections>
                 </viewController>
@@ -311,7 +316,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="YWS-Yb-16d"/>
+        <segue reference="Uyx-tX-ttN"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="house.fill" catalog="system" width="128" height="106"/>
