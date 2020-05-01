@@ -61,7 +61,6 @@
 		045B6394245ADF0D00FF2C9B /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				045B6392245ADF0800FF2C9B /* AlertController.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -118,6 +117,7 @@
 				04C1F267245AA7E300A2E29C /* HomeViewController.swift */,
 				04C1F269245AA7EE00A2E29C /* PostViewController.swift */,
 				04C1F26B245AA7F800A2E29C /* AccountViewController.swift */,
+				045B6392245ADF0800FF2C9B /* AlertController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
