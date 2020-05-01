@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		045B6391245ACA2300FF2C9B /* UIView+addBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045B6390245ACA2300FF2C9B /* UIView+addBorder.swift */; };
+		045B6393245ADF0800FF2C9B /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045B6392245ADF0800FF2C9B /* AlertController.swift */; };
 		04C1F24A245A908E00A2E29C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C1F249245A908E00A2E29C /* AppDelegate.swift */; };
 		04C1F24C245A908E00A2E29C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C1F24B245A908E00A2E29C /* SceneDelegate.swift */; };
 		04C1F251245A908E00A2E29C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C1F24F245A908E00A2E29C /* Main.storyboard */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		045B6390245ACA2300FF2C9B /* UIView+addBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIView+addBorder.swift"; path = "/Users/muraoyoshinobu/Documents/swift/AnonymousPost/AnonymousPost/UIView+addBorder.swift"; sourceTree = "<absolute>"; };
+		045B6392245ADF0800FF2C9B /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
 		04C1F246245A908E00A2E29C /* AnonymousPost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnonymousPost.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04C1F249245A908E00A2E29C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04C1F24B245A908E00A2E29C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +58,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		045B6394245ADF0D00FF2C9B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				045B6392245ADF0800FF2C9B /* AlertController.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		04C1F23D245A908E00A2E29C = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +89,7 @@
 			children = (
 				04C1F249245A908E00A2E29C /* AppDelegate.swift */,
 				04C1F24B245A908E00A2E29C /* SceneDelegate.swift */,
+				045B6394245ADF0D00FF2C9B /* Models */,
 				04C1F25D245AA37400A2E29C /* Views */,
 				04C1F25E245AA38100A2E29C /* Controllers */,
 				04C1F252245A908F00A2E29C /* Assets.xcassets */,
@@ -91,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				04C1F24F245A908E00A2E29C /* Main.storyboard */,
+				045B6390245ACA2300FF2C9B /* UIView+addBorder.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -122,7 +136,6 @@
 				6467DC7F5F95D0BC17C26EC0 /* Pods-AnonymousPost.debug.xcconfig */,
 				7F486305C7BBEBAC2E00CF6C /* Pods-AnonymousPost.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -244,11 +257,13 @@
 			files = (
 				04C1F26A245AA7EE00A2E29C /* PostViewController.swift in Sources */,
 				04C1F266245AA7BB00A2E29C /* LoginViewController.swift in Sources */,
+				045B6391245ACA2300FF2C9B /* UIView+addBorder.swift in Sources */,
 				04C1F264245AA7B400A2E29C /* RegisterViewController.swift in Sources */,
 				04C1F262245AA7A700A2E29C /* WelcomeViewController.swift in Sources */,
 				04C1F24A245A908E00A2E29C /* AppDelegate.swift in Sources */,
 				04C1F268245AA7E300A2E29C /* HomeViewController.swift in Sources */,
 				04C1F24C245A908E00A2E29C /* SceneDelegate.swift in Sources */,
+				045B6393245ADF0800FF2C9B /* AlertController.swift in Sources */,
 				04C1F26C245AA7F800A2E29C /* AccountViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

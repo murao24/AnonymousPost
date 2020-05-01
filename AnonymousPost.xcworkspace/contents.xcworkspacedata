@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/muraoyoshinobu/Documents/swift/AnonymousPost/AnonymousPost/Constans.swift">
+   </FileRef>
+   <FileRef
       location = "group:AnonymousPost.xcodeproj">
    </FileRef>
    <FileRef
